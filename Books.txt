@@ -1,0 +1,439 @@
+[Dr. Vijay Gokhale Sir]
+Books: 
+#--------------------------------------------------------------------------
+The C Programming Language: 
+	Beginner: 
+		*[1]	Programming with C By Gottfried (Schaum's Series)
+		[2] Programming in C (Ajay Mittal)
+	Building expertise: 
+		*[1] Understanding and Using C Pointers - Richard Reese (O'Reilly)
+		[2] Expert C Programming Deep C secretes - Peter van den Linden 
+	Post Expert level: 
+		*[1] The C Programming Language by K & R [Brian Kernighan & Dennis Ritchie]
+		[2] GCC User Manual manual : Chapter 5/6 -> Extensions to C language family 
+			(after reading this chapter you will be eligible for kernel programming from 
+			language perspective)
+	Recommended Track:
+		[1] Gottfried [2] Understanding & Using C Pointers [3] K & R [4] GNU C manual 
+#----------------------------------------------------------------------------------------
+Assembly Programming Language: 
+Linux : 
+	*[1] Intel 32 bit assembly programming + Linux OS + GNU tool-chain 
+		Professional Assembly Language by Richard Blum 
+
+	[2] Assembly Language : Step by Step : Programming with Linux 
+		Duntemaan 
+
+	[3] Modern x86 assembly language programming Kusswurm  
+
+	[4] Beginning x64 assembly programming Appress. 
+
+Windows: 
+	*[1] Assembly programming for intel based programmer 
+		 x86 assembly programming : Kip Irvine (7th Edition)
+	
+Historic:
+	*[1] IBM PC Language  -> Peter Abel 
+	*[2] Advanced MS DOS Programming -> Ray Duncan 
+
+Manual: 
+	*[1] Intel Software Developers Manual Vol 1 
+	*[2] Intel Software Developers Manual Vol 4 : Optimization Manual 
+
+Protected Mode Feautres (assembly for OS internals)
+[1] Advanced 80386 Programming by James Turly 
+[2] ----------""--------------- MS Press (VERY RARE)
+**[3] x86 Instruction Set Architecture -> By Tom Shanley
+[4] Intel Software Developers Manual Vol 3A - 3B  
+
+Hardware Track 
+*[1] ISA system bus architecutre 
+[2] EISA system bus architecture 
+[3] 80486 architecture
+[4] Protected Mode Architecture 
+--------------------------------------------
+x[5] PCI system bus architecture
+x[6] USB 
+
+[7] Serial Port Complete / Parallel Port Complelete / UBS Complete 
+	Jack Achelson 
+
+Track: 
+	[1] Richard Blum [2] Kip Irvine [3] Intel Manual vol 4
+#----------------------------------------------------------------------------------
+The C++ Programming Language -> The Queen of All Programming Language
+	Quick Start: 
+		[1] C++ Primer Plus 
+		[2] C++ : How to Program
+		[3] Thinking in C++ (vol 1 , Vol 2)
+	---------------------------------------------------------------------------
+	Beginner 
+		[1] Essential C++ -> Stanley Liepmaan 
+		*[2] C++ Programming : Principles & Practice -> Bjarne Stroustrup  
+			(1st edition : 98, 2nd edition : 11, 14)
+	Intemediate 
+		*[1] C++ Primer : Stanley Liepmaan 
+			[
+				3rd edition : 98 C++ : best for knowing how C++ compiler does things internally
+				4th edition : 98 C++ : readable (3rd edition is not readable unless you are already familiar with C++)
+				5th edition : C++ 11, 14 preview 
+			]
+	Advanced:  
+		[1] Effective C++ 	--> 1st edition (98)
+		[2] More Effective C++ --> 1st edition (98)
+		*[3] C++ Template Programming : In depth Guide (1st edition 98 C++)
+			-> Jossuits & Van der Voorde 
+			(2nd edition : 2017 C++ : Template)
+		[4] The C++ Programming Language : Bjarne Stroustrup 
+			[3rd edition : 98 C++ 
+			4th edition : 11 C++]
+	Standard Template Library: 
+		[1] Basic : Designing Components with C++ STL : Addision Weasly 
+		*[2] Advanced & Bible : The C++ Template Library : Jossuits 
+			[1st edition : 98, 2nd edition : 2017 STL]
+			Not only, 'How to use STL' but STL implementation details (C++ template in depth guide 
+			pre-requisite)
+#---------------------------------------------------------------------------------------------------
+	Internals & Design: 
+		*[1] Inside C++ Object Model By Liepmann
+		*[2] Design & Evolution of C++ -> Stroustrup 
+#---------------------------------------------------------------------------------------------------
+	Zen Level: 
+		*[1] Object Oriented C -> Alex Tobius Schneider
+#----------------------------------------------------------------------------------------------------
+Track: 
+[1]  C++ Programming : Principles & Practice -> Bjarne Stroustrup  
+[2]  C++ Primer [need not be read page to page, 3rd & 4th]
+[3]  C++ Template Programming : In depth Guide (1st edition 98 C++)-> Jossuits & Van der Voorde 
+		(2nd edition : 2017 C++ : Template)
+[4] The C++ Programming Language -> Stroustrup (3rd and / or 4th)(wont need line by line)
+	[advices, part 4 : design, chapter 2/3 : A tour of C++, 
+	Booklet : A tour C++ -> book ]
+[5]  Advanced & Bible : The C++ Template Library : Jossuits 
+	[1st edition : 98, 2nd edition : 2017 STL]
+	Not only, 'How to use STL' but STL implementation details (C++ template in depth guide 
+	pre-requisite)
+[6] Inside C++ Object Model By Liepmann
+[7] Design & Evolution of C++ -> Stroustrup (at leisure)
+[8] Object Oriented C -> Alex Tobius Schneider
+------------------------------------------------
+Will be explained later 
+[9] Inside COM -> Del Rogerson 
+[10] Essential COM -> Don Box
+[11] Inside OLE 2.0 -> Kraig Brockshmidt 
+#--------------------------------------------------------------------------------------------------
+The Java Programming Language: 
+
+Core Java 
+	*[1] Core Java Vol 1 by Cay Horstman & Horstman (11th Edition)
+	*[2] OCJP Java : Khalid Mughal (cannot be read beginners)
+
+Advanced Java 
+	[1] Core Java Vol 2: Cay Hosrtman & Horstman 
+
+Java Enterprise API's 
+	[1] Oracle Vol 1 & Vol 2 (freely available on oracle webside)
+		Prerequiste : Design Patterns in Java (Pearson)
+
+Java Internals: 
+	*[1] Java Virtual Machine specification (Documentation)
+	*[2] Java Performance Tuning (Pearson) -> James Gosling 
+
+Framework: 
+	Documentation 
+#-------------------------------------------------------------------------------------------------
+C# 
+[1] CLR via C# -> Jeffrey Richter 
+(
+Essential .Net Volume 1 - Don Box
+Dot net Book Zero : By Charles Petzold
+)
+#-------------------------------------------------------------------------------------------------
+Perl 
+[1] Learning Perl Oreilly 
+*[2] Programming Perl-> Larry Walls (bible)
+#--------------------------------------------------------------------------------------------
+Python: 
+*[1] Learning Python - Mark Lutz 	(1500)
+*[2] Programming Python - Mark Lutz (1700)
+#--------------------------------------------------------------------------------------------
+Haskell : 
+**[1] Haskell road to logic, maths, and programming
+**[2] Discrete mathematics using computers 
+#---------------------------------------------------------------------------------------------
+Golang
+[1] The way to Go by Ivo Balbaert 
+*[2] Concurrency in Go by Katherine Cox - Buday 
+[3] The Go Programming language -> Kernighan & Pike 
+
+#---------------------------------------------------------------------------------------------
+
+Data Structures and algorithms! 
+Language Agnostic
+**[1] Introduction To Algorithms by Cormen, Rivest, Leiserson -> Valley Interview Book
+[ 
+	Introduction to Discrete mathematics with applications to CS -> Kenneth 
+	first 7 chapters 
+]
+(not to be read right now!)
+
+C 
+[1] Fundamentals of Data Structure through C -> Horowtiz Sahani 
+[2] Algorithms in C -> Vol 1-4 (Book 1), Vol 5(Book 2)
+
+C++ 
+*[1] Data Structure & Algorithms by Tamassia & Goodrich
+[2] Data Structures and Problem Solving using C++ -> Mark Allen Weiss 
+	
+Java 
+[1] Algorithms in Java -> Robert Sedgewick 
+[2] Data Structure & Algorithms (java edition) -> Tamassia & Goodrich 
+**[3] A practical guide to data stucture & algorithms using Java Goldman & Goldman
+
+Python 
+[1] Data Structure & Algorithms (Python edition) -> Tamassia & Goodrich
+#-------------------------------------------------------------------------------------------------
+The Art of Computer Programming Vol 1 to Vol 4 -> Donald E. Knuth. 
+#-------------------------------------------------------------------------------------------------
+Operating System and Internals: 
+Admin 
+	Linux: 
+		[1] Running Linux 
+		[2] Mastering Shell Scripting. Wrox Publication 
+		[3] Advanced bash scripting -> LDP 
+		[4] linuxfromscratch.org
+
+System Call Programming 
+	Pre-requisite -> C Programming Language 
+
+	Unix/Linux/POSIX: 
+		[1] Advanced Programming Under Unix Environment W Richard Stevens / Rago -> 3rd Edition 		
+		**[2] The Linux Programming Interface - Michael Kerrisk 
+
+	Windows: 
+		*[1] Programming Windows -> Charles Petzold 
+		**[2] Programming Applications for MS Windows (4th Edition)-> Jeffrey Richter 
+		*[3] Programming Server Side Applications for MS windows -> Jeffrey Richter (Jeevan)
+		[4] Windows System Programming -> Hart 
+
+Device Drivers: 
+	Linux: 
+		[1] Linux Kernel Module Programming Guide 
+		*[2] Linux Device Derivers by Rubini & Rubini 
+		[3] Essential Linux Device Drivers 
+	
+	Windows: 
+		**[1] Viscarola & Mason 
+		*[2] Art Baker 
+		*[3] Walter Oney
+		*[4] Windows Drivers Foundations -> Microsoft Publication  
+		 [5] Windows kernel programming Yosifovich  
+	Unix: 
+		[1] Unix Device Drivers : Pajari 
+
+O.S. Internals: 
+	Generic Concept (O.S. Agnostic) 
+		*[1] Modern Operating System by A.S. Tanenbaum 
+			[ Chapter 2 : The Process : Busy Waiting -> Monitors ]
+		[2] William Stalling -> Operating systems 	
+
+	OS Specific Design 
+		**[1] The Design of Unix OS -> Maurice J Bach 
+		**[2] Magic Garden Explained -> Cox & Goodhart (Unix Sys V R4)
+		**[3] The Design and Implementation of 4.4 BSD -> McKusick & McKusic
+			  The Design and Implementaiton of FreeBSD -> ---||--------
+			  (Research Paper : Before Memory was Virtual -> PJ Denning)
+		**[4] Solaris Internals -> Jim Mauro & McDougal 
+			  1st and 2nd Edition [Kthread -> LWP -> Uthread]
+			  [POSIX thread Library -> m : 1 to m : n to 1 : 1]
+		**[5] Unix Internals : New Frontiers -> Vahalia 
+			  [Process Model : Unix Process -> Multi-threaded Evolution]	
+		**[6] Inside Windows NT -> Helen Custor 	1st 
+			  Inside Windows NT -> David Solomon 	2nd 
+			  Inside Windows 2000 -> David Solomon 	3rd 
+			  Windows Internals 4th -> David Solomon & Mark Russinovitch 
+			  (7th Edition)	
+		**[7] Inside MAC OS X -> Amit Singh  
+
+	OS Specific Implementation 
+		[1]	Linux Kernel Development by Robert Love
+
+	OS Specific Implementation with Hardware specific details 	
+		**[2] Understanding the Linux Kernel by Cessati & Bovet
+		[3] Linux  Kernel Architecture by Maurer (2.6.24)
+
+	Kernel Code Commentary & Subsystem Specific Books! 
+		**[1] John Lion's Kernel Code Commentary  (UNIX version 6)
+		**[2] The Design and Implementation of Operating System : MINIX 3 Book. 
+			  A.S. Tanenbaum. 
+		**[3] Maxwell's Kernel Code Commentary -> 2.4.x Kernel 
+		**[4] Understanding Linux VM Manager -> Mel Gorman (2.4.22) 
+		**[5] Understanding Linux Process Manager -> Gorman (2.4.20) 
+		**[6] What is Page? 
+
+	Embedded Linux: 
+		[1]	Building Embedded Linux 
+		**[2] Exploring Beaglebone 
+		[3] Exploring Rpi 
+		[4] Linux kernel In Nutshell 
+		[5] Embedded Linux Primer 
+#-----------------------------------------------------------------------------
+
+*********************PRECALCULUS MATHS*****************************
+Mathematics 
+	[1] 5-10 standard CBSE or ICSE board books [starter]	
+	[2] Algebra and Trignometry by Sullevin (10th edition) 
+Basic Algebra : 
+	[1]	Higher Algbra -> Hall & Knight 
+	[2] Higher Algebra -> Bernard & Child 
+Euclidean Geometry: 
+	[1] Euclidean Geometry -> karmalkar
+	[2] Maths Olympiad Geometry books 
+Trinogmetry: 
+	[1] Plane Trigonometry vol 1-> SL Loney 
+	[2] Plane Trigonometry vol 2 -> SL Loney 
+	[3] Maths Olympiad books 
+Coordinate Geometry 
+	[1] 2D coordinate geometry by SL Loney 
+********************Discrete mathematics*************************
+	**[1] DM with applications to CS -> Rosen 
+	[2]	 Discrete and Combinatorial Maths -> Grimaldi & Ramana
+	*[3]  How to prove it? Velleman (Cambridge )
+	[4] Introduction to Set theory -> Halmos
+	[5] The elements of set theory (!)
+	**[6] Logic, Proofs and Languages -> STANFORD UNIVERSITY BOOK 
+	[7] Applied Combinatorics -> Alan Tucker 
+	[8]	Graph Theory -> Diestel (Graduate)	(VA)
+	x[9]	Graph Theory -> Harrary  			(VA)
+	x[10] 	Graph Theory -> Bondy & Murti 		(VA)
+	x[11]	Abstract Algebra -> Heirnstein 
+	x[12]	Abstract Algebra -> Dummit & Foot 
+	[13]	Elementary Number Theory -> David Burton 
+	x[14] 	Number Theory -> G.H. Hardy 
+
+	[1] Foundations of Discrete Mathematics -> K.D. Joshi 
+	[2] Applied Discrete Structures -> K.D. Joshi 
+*******************Calculus**********************************
+**[1] Thomas Calculus
+**[2] Calculus -> Early Transcendentals -> Stewerts 
+  [3] Problems in Calculus of One Variable -> I.A. Maron 
+  [4] Advanced Engineering Mathematics (Differential Equation)
+  [5] Fourier Transform / Laplace's Transform / DE -> Schaum's series 
+********************Analysis**********************************
+ *[1] Introduction to real analysis -> Sherbert 
+  [2] Principles of mathematical analysis -> Walter Rudin 
+  [3] Functional analysis -> Walter Rudin 
+  [4] Real & Complex Analysis -> Walter Rudin 
+  [5] Real Analysis -> Royden 
+  [6] Calculus for scientists & Enginners (Calculus + Real analysis)
+  [7] General Topology -> Mukres 
+  [8] Introduction To General Topology -> K.D. Joshi 
+
+Physics 
+	[1]	Haliday & Resnik 
+	[2] University Physics (Sears and Zemansky)
+	[3] Problems in General Physics I.E. Irodov (Classical Mecanics & Electromagnetism)
+	[4] Lectures in Physics (vol 1 to vol 3 -> Richard Feynman)
+
+Semiconductor Physics 
+	[1] Semiconductor Physics -> Donald Naeman (Semiconductor analysis at Quantum level)
+
+Electronics Devices and Circuits 
+	[1] Yellow Milmaan 
+	[2] Black Milmaan 
+	*[3] Electronics Devices & Circuits -> Donald Naeman 
+
+Digital Electronics 
+	[1] R.P. Jain 
+	[2] Fundamentals of Digital Design with Verilog -> Stephen Brown 
+	[3] Fundamentals of Digital Design with VHDL 	-> Stephen Brown 
+
+Computer Organization 
+	*[1] Computer Organization -> A hardware / software interface -> Hanessey & Patterson 
+	*[2] Computer Architecture -> A Quantitative Approach -> Patterson & Hanessey 
+	[3] CO -> Zakey (Good text book)
+	[4] CO -> Hays (Good book)
+
+	*[5] Structured Computer Organization by AST 
+	*[6] Computer Organization & Design -> P. Pal Chaudhary 
+#--------------------------------------------------------------------------------------------
+TOC & Compilers & Type Theory 
+TOC
+	*[1] Introduction to automata theory, languages and computation 
+		Aho Ulmaan Hopcraft 
+	*[2] Introduction to Theory of Computation -> Martin 
+Compilers 
+	*[1] Compilers : Principles, Techniques & Tools aka (Dragon Book)
+			Aho Ulmaan Sethi 
+	
+	**[2] Theory of parsing, translation & compiling -> VOL 1  -> Aho Ulmaan 
+
+	[3] Engineering a compiler 
+
+	[4] Crafting a compiler 
+
+Types Theory and lambda calculus 
+[1] Types & Programming Languages -> Benjamine Pierce 
+[2] Advanced Topics in Types and Programming Languages -> Benjamine Pierce 
+[3] Design Concepts in Programming Languages by Sheldon 
+Pre-> 
+[1] Principles of Programming Languages by Ravi Sethi 
+[2] Programming Language Pragramitcs -> Michael Scott 
+
+OOP concepts & design pattern 
+*[1] Object Oriented Analysis and Design by Grady Booch -> 2nd Edition / 3rd Edition 
+*[2] Object Oriented Software Construction by Bertrand Meyer 
+*[3] Design Patterns : An elements of reusable components 
+Thoery if you want to try practical COM 
+[1] Inside COM -> Del Rogerson 
+[2] Essential COM -> Don Box 
+[3] Inside OLE 2.0 -> Kraig Brockschmidt 
+
+Database 
+[1] Databse system concepts by Korth 7th edition 
+[2] Evan Byross 
+[3] DBMS -> Navathe 
+
+
+Networking 
+Genreal Theory 
+[1] Networking -> Top to Down approach -> Forouzan 
+
+TCP / IP Theory 
+*[1] TCP/IP Illustrated Vol 1 -> W Richard Stevens 
+*[2] Internetworking with TCP / IP -> Vol 1 -> Douglas Comer 
+*[3] The TCP/IP Guide 
+
+Programming 
+**[1] Unix Network Programming Vol 1 : 3rd 
+[2] Unix Network Programming Vol 2 : IPC 
+[3] Unix Network Programming Vol 3 : HTTPS etc. (C programming)
+[4] Internetwroking with TCP / IP : Vol 3 : BSD Sockets 
+[5] Windows Socket Programming [MS Press]
+
+Internals
+[1] TCP/IP Illustrated Vol 2 : W Richard Stevens (4.4 BSDlite)
+[2] Internetworking with TCP/IP -> Vol 2 -> XINU 
+[3] Understanding Linux Network Internals 
+
+Distributed Systems 
+[1] Distributed Systems -> Principles & Paradigms (Tanenbaum & Van Der Steen)
+[2] Distributed OS -> Tanenbaum 
+
+AI 
+**[1] Artificial Intelligence : A Modern Approach -> Russel & Norvig 
+
+Security 
+[1] Network and Information Security By William Stalling 
+**[2] Secure Coding in C and C++, Second EditionW 
+
+Programming Style 
+**[1] Structure and Interpretation of Computer Programs (SICP) 
+**[2] Concepts, Models and Tecniques in Computer Programming (Haideri & Haideri)
+		(Considered to be modern day SICP)
+#-----------------------------------------------------------------
+	only style 
+	[1] clean code
+	[2] great code 
+	[3] solid codes 
+	[4] programming pearls by Bentley 

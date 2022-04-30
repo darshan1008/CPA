@@ -1,0 +1,17 @@
+﻿Build started 03-08-2020 2:21:05.
+     1>Project "E:\CPA\Advance Pointer\dj_memset\dj_memset.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\dj_memset.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Lib:
+         All outputs are up-to-date.
+         dj_memset.vcxproj -> E:\CPA\Advance Pointer\dj_memset\Release\dj_memset.lib
+       FinalizeBuildStatus:
+         Deleting file "Release\dj_memset.unsuccessfulbuild".
+         Touching "Release\dj_memset.lastbuildstate".
+     1>Done Building Project "E:\CPA\Advance Pointer\dj_memset\dj_memset.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.20
