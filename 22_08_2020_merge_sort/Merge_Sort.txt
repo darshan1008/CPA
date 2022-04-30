@@ -1,0 +1,184 @@
+Let a and b be integers. 
+
+[a, b] = {n belongs to N | a <= n <= b}			b - a + 1
+
+[a, b) = {n belongs to N | a <= n< b}			b - a 
+
+(a, b] = {n belongs to N | a < n <= b}			b - a 
+
+(a, b) = {n belongs to N | a < n < b} 			b - a - 1
+
+0 <= p <= q 
+
+void merge(int* a, int p, int q, int r){
+	int* a1 = NULL, *a2 = NULL; 
+	int n1, n2; 
+
+	n1 = q - p + 1; 
+	n2 = r - q; 
+
+	int cnt; 
+	int i, j, k; 
+
+	a1 = (int*)malloc(n1 * sizeof(int)); 
+	a2 = (int*)malloc(n2 * sizeof(int)); 
+	assert(a1 != NULL && a2 != NULL); 
+	memset(a1, 0, n1 * sizeof(int)); 
+	memset(a2, 0, n2 * sizeof(int)); 
+
+	for(cnt = 0; cnt < n1; ++cnt)
+		a1[cnt] = a[p+cnt]; 
+
+	for(cnt = 0; cnt < n2; ++cnt)
+		a2[cnt] = a[q+1+cnt]; 
+
+	k = 0; 
+	while(k < (n1 + n2))
+	{
+		if(a1[i] <= a2[j])
+		{
+			a[p+k] = a1[i]; 
+			i++; 
+			k++; 
+			// if a1 finishes earlier
+			if(i == n1)
+			{
+				// copy back remaining a2 in a
+				while(j < n2)
+				{
+					a[p+k] = a2[j]; 
+					j++;
+					k++; 
+				}
+
+				break; 
+			}
+		}
+		else{
+			a[p+k] = a2[j]; 
+			j++;
+			k++; 
+			// if a2 finishes first 
+			if(j == n2)
+			{
+				// copy back remaining a1 into a. 
+				while(i < n1)
+				{
+					a[p+k] = a1[i]; 
+					i++; 
+					k++; 
+				}
+				break; 
+			}
+		}
+	}
+
+	free(a1); 
+	free(a2); 
+	a1 = a2 = NULL; 
+
+}
+
+Precondition. 
+a[p...q] 	---> Sorted
+a[q+1...r]  ---> Sorted 
+
+MERGE(a, p, q, r)
+
+Postcondition. 
+a[p...r]	---> Sorted
+
+
+////////////////////////////////////////////
+Invariant: a[p] to a[p+k] is sorted 
+
+k = n1 + n2 
+
+a[p] to a[p+n1+n2-1]
+
+a[p] to a[r] is sorted. 
+////////////////////////////////////////////
+
+a[0...7]
+
+p = 0 
+q = 0 
+r = 1 
+
+0 <= p <= q < r < 8 : YES 
+
+0 <= 0 <= 0 < 1 < 8 : YES 
+
+MERGE(a, 0, 0, 1)
+
+n1 = q - p + 1 = 0 - 0 + 1 = 1
+n2 = r - q = 1 - 0 = 1 
+
+a[0...0] ---> Sorted 
+a[1...1] ---> Sorted 
+Merge(a, 0, 0, 1)
+
+a[0...1] ---> SORTED 
+
+///////////////////////////////////////////
+
+p = 2 
+q = 2 
+r = 3 
+
+a[p...q] i.e. a[2...2] 		---> SORTED 
+a[q+1...r] i.e. a[3...3]	---> SORTED 
+
+MERGE(a, 2, 2, 3)
+
+a[p...r] i.e. a[2...3]		---> SORTED 
+
+///////////////////////////////////////////////////
+
+a[0...1] ---> sorted p = 0, q = 1
+a[2...3] ---> sorted q+1 = 2, r = 3
+
+MERGE(a, 0, 1, 3)
+
+a[p...r] i.e. a[0...3]
+
+
+1. Merge(a, 0, 0, 1)	a[0...1]	---> sorted
+2. Merge(a, 2, 2, 3)	a[2...3]	---> Sorted
+3. Merge(a, 0, 1, 3)	a[0...3]	---> sorted
+4. Merge(a, 4, 4, 5)	a[4...5]	---> sorted
+5. Merge(a, 6, 6, 7) 	a[6...7]	---> sorted
+6. Merge(a, 4, 5, 7)	a[4...7]	---> sorted
+7. Merge(a, 0, 3, 7)	a[0...7]	---> sorted
+
+///////////////////////////////////////////////////
+
+a[0...N-1]
+
+a[0...N-2] is sorted 
+a[0...N-1] 
+insert_at_sorting_pos()
+
+int sum_all(int *a, int n)
+{
+	int summation = 0; 
+	int i; 
+
+	// INVARIANT: 
+	for(i = 0; i < n; ++i)
+		summation = summation + a[i]; 
+
+	return summation; 
+}
+
+#-----------------------------------------------------------------------------------
+[1] Algorithmic Problem Solving by Roland Backhouse 
+
+[2] The Science Of Programming by David Gries (pioneers of procedural programming)
+
+[3] A Logical Approach to Discrete Mathematics by David Gries 
+
+[4] How to think about algorithms (Recursion & Invariants) (Pre-requisite)
+#-----------------------------------------------------------------------------------
+
+
