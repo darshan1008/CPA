@@ -1,0 +1,8 @@
+SLECTION_SORT(A)
+1   for i = 1 to A.length -1 
+2        min = i 
+3        for j = i+1 to A.length
+4            if A[j] < A[min]
+5                min = j
+6        if min != i
+7            exchange A[i] with A[min]
