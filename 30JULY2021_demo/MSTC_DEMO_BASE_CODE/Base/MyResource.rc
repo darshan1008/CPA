@@ -1,0 +1,6 @@
+#include<windows.h>
+#include"MyResource.h"
+
+MYICON ICON resources/Image.ico
+MYICONSM ICON resources/lamp.ico
+MY_BITMAP BITMAP resources/pujan.bmp

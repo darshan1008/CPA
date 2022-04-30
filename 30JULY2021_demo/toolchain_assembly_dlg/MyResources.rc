@@ -1,0 +1,5 @@
+#include<Windows.h>
+#include"MyHeader.h"
+
+TOOLCHAIN_BITMAP BITMAP     resources/toolchain_bitmap.bmp
+ASM_BITMAP_1     BITMAP     resources/filename_.bmp
