@@ -1,0 +1,103 @@
+Dynamic Collection of Disjoint Sets 
+
+S = { unordered collection of elements without repetition }
+
+One can form set of sets 
+
+S1 = {} 
+S2 = {} 
+
+
+
+Sk = {} 
+
+
+S = {	S1, S2, S3, ..., Sk 	}
+
+S is a colletion. (It is obviously a kind of set but we choose to call it a collection)
+
+It is not merely a collection but it is a disjoint collection of sets. 
+
+meaning 
+if you take any two sets Si and Sj from S, (where 1 <= i != j <= k)
+Si (intersection) Sj = PHI
+
+
+Singleton Set : A set containing only one element in it is called as a SINGLETON set. 
+
+So when you have to add an element in the collection S, it is NOT possible BECAUSE 
+S accepts ONLY sets. So we have to wrap an element to be added in a set an obviously 
+that newly formed set WILL BE SINGLETON in nature. 
+
+
+
+U = { u1, u2, ....., un }
+
+Group : is any non-empty subset of U is a group. 
+
+u1, u8, u15 ---> GROUP ---> leader ---> uid of group leader is GID. 
+
+#----------------------------------------------------------------------
+
+u1, u4, u9 ---> GROUP 
+
+When you create a new user under Linux Operating System 
+
+Ubuntu ---> yogeshwar ---> 1000 (uid) 
+						   1000	(gid)
+						   { 1000 } PRIMARY GROUP OF A USER 
+
+						   x ----> {x} ---> {x} can be added to S 
+
+
+
+MAKE-SET(x) ---> {x}
+
+Any new element to be added into disjoint collection of sets will first be converted to a set and 
+that set can be added into disjoint collection of sets. 
+
+Does that mean all sets in disjoint collection are singleton? 
+Answer is no. It is possible to combine singleton sets belonging 
+to disjoint collection to form a non-singleton set. 
+
+UNION(x, y) ---> the set whose id (representative is x) and set whose representative is y 
+				 will be combined together to form a bigger set and x or y (any one of the elements 
+				 can be chosen as a representative element of the union set)
+
+{x} ---> x 
+
+{y} ---> y 
+
+{x, y} ---> x 
+
+element --> set 
+we can refer to a set by quoting it's representative element. 
+Because no element can appear in two sets in collection simultaneously. 
+
+
+
+
+
+S = {Sx, Sy, Sz}
+UNION(Sx, Sy)
+
+S { Sx U Sy, Sz}
+
+NOT 
+
+S={Sx, Sy, Sz, Sx U Sy} // WRONG 
+
+
+S = {Sx, Sy, Sx U Sy}
+
+
+
+
+
+
+
+
+
+
+
+

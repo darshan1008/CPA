@@ -1,0 +1,66 @@
+PART I : Parition of set A: 
+
+Partition of a set is a set of non-empty subsets (say A1, A2, ..., An) of set A 
+such that 
+
+(1) Union of all sets is A
+i.e. A1 U A2 U A3 U .... U An = A 
+
+(2) If you take any two subsets say Ai and Aj (1 <= i, j <= n)
+then Ai intersection Aj = PHI 
+In other words, all subsets are pairwise disjoint. 
+/////////////////////////////////////////////////////////////////////////////////////////////
+PART II : Cut of a graph. 
+Let G(V, E) be a graph. Cut of G.V is a partition on set G.V defined by two sets 
+(S, V-S). 
+/////////////////////////////////////////////////////////////////////////////////////////////
+PART III: What do you mean by a cut respecting a set of edges. 
+
+Let G(V,E) by a graph. Let A be a subset of G.E 
+A cut (S, V-S) of Graph G is SAID TO RESPECT set A of edges if all edges in A have both of 
+their end points either in S or in V-S. 
+
+i.e. there is no edge in A such that one vertex of the edge is in S and the other in V-S. 
+////////////////////////////////////////////////////////////////////////////////////////////
+PART IV : A Crossing Edge. 
+Let G be a graph and (S, V-S) be a cut on graph G. Set of all edges which have one of their 
+vertex in S and the other in V-S is known as a set of 'crossing edges'. Any edge having this 
+property is set to 'CROSS' the cut of a graph. 
+////////////////////////////////////////////////////////////////////////////////////////////
+PART V: LIGHT EDGE. 
+
+Let G(V,E) be a graph. Let A be any subset of G.E and let (S,V-S) be any cut of graph G 
+RESPECTING the cut (S, V-S). Let C be the set of all edges which cross the cut (S, V-S)
+(in other words, C is a set of crossing edges with respect to cut (S, V-S))
+
+The edge in C having the weight less than or equal to all other edges in C is known as 
+a LIGHT EDGE. 
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+G.E - A 
+
+Graph G(V, E)
+
+A is a subset of G.E
+A which is a subset of edges is not any arbitrary subset of edges. 
+It is given that all edges in A are part of one of the possible minimum spanning trees. 
+
+Now you take a cut (S, V-S) of G.V such that no edge in A has to cross the cut i.e. 
+a cut (S, V-S) respects a set of A of edges. 
+
+Now find out set of all edges (say C) which cross the edge. 
+And find out an edge having minimun weight in C. 
+
+That edge is safe edge/ 
+
+A = A U (e)
+
+A (S, V-S)
+
+e 
+
+A = A U {e}
+
+
+
+

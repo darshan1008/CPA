@@ -1,0 +1,118 @@
+S = { 
+		{v1},
+		{v2},
+		{v3},
+		{v4}, 
+		{v5},
+		{v6}
+	}
+
+
+E = {	
+		{v5, v6}, // e1
+		{v1, v6}, // e2
+		{v1, v2}, // e3
+		{v3, v6}, // e4
+		{v4, v5}, // e5
+		{v2, v3}, // e6
+		{v3, v4}  // e7 
+	}
+
+A = {} 
+
+// ITERATION 1
+e1 : v5, v6 
+
+find_set(5) 
+find_set(6)
+
+find_set(5) != find_set(6) == TRUE 
+Union(5, 6)
+
+S = {
+		{v1}, 
+		{v2}, 
+		{v3}, 
+		{v4}, 
+		{v5, v6}, 
+	}
+
+A = {	{5, 6}
+
+
+	}
+
+// ITERATION 
+
+find_set(1) != find_set(6)
+Union(1, 6)
+
+S = {
+		{2}, 
+		{3}, 
+		{4}, 
+		{1, 5, 6}
+	}
+
+A = {
+		{5, 6}, 
+		{1, 6}
+	}
+
+// ITERATION 3 
+e3 : (v1, v2)
+
+find_set(1) != find_set(2) == TRUE 
+
+Union(1, 2)
+
+S = {
+		{3}, 
+		{4}, 
+		{1, 2, 5, 6}
+	}
+
+A = {
+		{5, 6}, 
+		{1, 6}, 
+		{1, 2}
+	}
+
+// ITERATION 4 
+e4 : (v3, v6)
+
+find_set(3) != find_set(6) == TRUE 
+Union(3, 6)
+
+S = {
+		{4}, 
+		{1, 2, 3, 5, 6}
+	}
+
+A = {
+		{5, 6}, 
+		{1, 6}, 
+		{1, 2}, 
+		{3, 6}
+	}
+
+// ITERATION 5 
+e5 : (v4, v5)
+find_set(4) != find_set(5) == TRUE 
+
+S = {
+		{1, 2, 3, 4, 5, 6}
+	}
+
+A = {	
+		{5, 6}, 
+		{1, 6}, 
+		{1, 2}, 
+		{3, 6}, 
+		{4, 5}
+	}
+
+// ITERATION 6 
+
+
+// ITERATION 7 

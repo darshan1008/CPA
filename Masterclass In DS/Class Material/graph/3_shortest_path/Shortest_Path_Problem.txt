@@ -1,0 +1,198 @@
+Shortest Path Problem Characterization 
+
+Let G(V, E, w) be a weighted undirected graph 
+where 	V = {set of all vertices in the graph}
+ 		E = {set of all edges in the graph}
+ 		(Technically E is a subset of V x V)
+ 		w = Weight function 
+ 		w : E -> R+ 
+ 			where E is set of edges and R+ is a set of positive real numbers. 
+
+Path from vi to vj in a graph is a set of edges 
+
+e1, e2, ...., ek such that 
+start vertex of e1 = vi
+end vertex of ek = vj 
+
+for all k within 1 to k-1
+end vertex of (v-k) = start vertex of (v-k+1)
+	
+   p
+vi ~ vj
+w(p) = sigma(ei) where i = 1 to i = k 
+	= w(e1) + w(e2) + w(e3) + ... + w(ek)
+
+
+				p
+Let P = {p | vi ~ vj}
+i.e. P is a set of all paths from vi to vj 
+min{w(p1), w(p2), ....., w(pm)}
+
+where p1, ..., pm are all paths in P. 
+Shortest Path Proble 
+
+#------------------------------------------------------------
+
+Different types of shortest path algorithms 
+
+
+starting vertex = source 
+ending vertex = sink 
+
+To find shortest path from vi to vj 
+
+is known as 
+
+single source ---> single sink  	(C1)
+
+single source ---> multi sink   	(C2)
+
+multi source ---> single sink  		(C3)
+
+multi source ---> multi sink    	(C4)
+
+There are well known algorithms from (C2) and (C4) 
+
+
+C2 : You have accept any vertex from client, say s. 
+Single source - Multi sink shortest path problem means 
+that you have to find out shortest path from s to 
+all vertices in G.V - {s} 
+
+Algorithm I : 	Dijisktra's shortest path algorithm. 
+			  	Pro : It works definitively 
+			 	Con : It does not accept negative weight for edges 
+
+Algorithm II : 	Bellman-Ford 
+			  	Pro: 	It accepts edges with negative weights 
+			  	Con: 	If there is negative weight cycle in graph then 
+			  			this algorithm cannot find the answer for given s.  
+
+
+C4 : You have to accept weighted graph G(V, E, w)
+and for all vertices s in G.V you have to shortest 
+path from v to all vertices in G.v - {s}
+
+Algorithm :	Ford - Fulkerson Method 
+			Pro : 	Great.
+			Con : 	Pretty Difficult! 
+
+#---------------------------------------------------------------------------------
+
+// Source code level characterization. 
+// output of this algorithm --> shortest path from s to all vertices in 
+// g->pv_list - {s}
+void shortest_path(graph_t *g, vertex_t s){
+	
+}
+#----------------------------------------------------------------------------------
+
+How would you solve the problem in terms of it's characterization? 
+
+Let x and y be any two distinct vertices in G.V 
+
+In order to find out shortest paths from x to y 
+we must enumerate all the paths from vertex x to 
+vertex y, then compute the cost of each individual 
+path and then find out the minimal cost amongst all 
+the computed paths. 
+
+All the paths within enumeration corrossponding the 
+minimum cost are shortest paths from x to y. 
+#-----------------------------------------------------------------------------------
+
+Dijisktra's shortest path algorithm :- 
+
+It's a single source and multi sink algorithm. 
+
+It starts from source vertex s, make a BFS like traversal through a graph. 
+At every point it does some computation (with constant cost i.e. time 
+required for that computation is fixed irrespective of number of vertices 
+and number of edges in graph) and at the end of the traversal, it claims 
+to have found the shortest path from s to rest of the vertices in graph. 
+
+Bellman Ford algorithm : 
+Accept the source vertex s. 
+It goes through the set of edges in non-decreasing order by weight 
+|G.V| - 1 
+
+for(i = 0; i < |G.V| - 1; ++i){
+	for (every edge in G.E in non-decreasing order){
+		do some fixed cost computation 
+	}
+
+	if(negative path cycle exists){
+		return False 
+	}
+	else
+		return True; 
+}
+
+If negative path cycle does not exist, this algorithm will work 
+even with negative weights of the edges. 
+
+At the end, if successful, it finds shortest path from s to 
+rest of the vertices in G.V. 
+
+#----------------------------------------------------------------------------------
+
+/* Implementation adjustments for Bellman-Ford Algorithm 
+
+struct edge{
+	vertex_t v_start; 
+	vertex_t v_end; 
+	double w; 
+}; 
+
+struct graph{
+	vlist_t *pv_list; 
+	edge_t *p_edge_list; 
+
+	int nr_vertices; 
+	int nr_edges; 
+}; 
+
+----------------
+
+----------------
+	---------------------------->|e1|<------>|e2|<-------->|e3|<------>........<------>|en| 
+----------------
+
+
+|ek| 
+
+struct edge_node{
+	struct edge e; 
+	struct edge_node *prev; 
+	struct edge_node *next; 
+}; 
+
+*/ 
+
+#-----------------------------------------------------------------------------------------
+Greedy Approach Preamble: 
+
+A comment about high level strategy of Dijistra's shortest path algorithm: 
+
+We have already seen that in DSA we make BFS like traversal through a graph and at each 
+vertex we perform some fixed cost computation. 
+
+Moreover, this computation is performed based on local information available at the respective 
+positions. We do not have access to global information while performing a computation at 
+any given node. 
+
+
+A computation performed at any given node tries to find an optimal solution based on local 
+available information. 
+
+Question is this --> 
+Does taking optimal decision, based on local information, at every stage, lead to a globally 
+optimized solution at the end of the algorithm? 
+
+It depends on problem to problem. 
+If certain types of properties can be established in the context of your problem then 
+local optimiality may lead to global optimality. 
+
+If not then there is no deterministically optimial solution. 
+
+#--------------------------------------------------------------------------------------------

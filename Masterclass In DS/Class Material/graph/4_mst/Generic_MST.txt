@@ -1,0 +1,46 @@
+Generic_MST(G, w){
+	
+	// G : is a weighted and undirected graph 
+	// no having an isolated vertext and a self edge 
+	// w : weight function of graph G. 
+
+	Let S be a set of edges which will eventually contain
+	edges in minimum spanning tree. 
+
+	S = {} 
+
+	while (edges in S do not form a spanning tree){
+		Pick up a "safe edge" 'e', from G.E - S
+		Add  'e' to S i.e. 
+		S = S union {e}
+	}
+
+	return (S) 
+} 
+
+Meaning of safe edge : At any iteration in Generic_MST we are not 
+aware of all combinations of edges which would form a spanning tree. 
+
+
+Therefore, we have to be select such an edge in every iteration 
+which going ahead will not be RESPONSIBLE for violating MINIMUM 
+property of spanning tree. 
+
+Such an edge from the set of remaining edges (i.e. G.E - S) 
+is called a safe edge. 
+
+The approach taken by Generic_MSG is mathematically known as 
+CONSTRUCTIVIST approach 
+
+#-------------------------------------------------------------------------
+
+
+Richard Feynman : Quantum Spins ---> Nobel 1965 
+
+How to solve any problem? 
+
+S1 : Write down the problem. 
+S2 : Think hard. 
+S3 : Write down the solution. 
+
+#--------------------------------------------------------------------------- 
