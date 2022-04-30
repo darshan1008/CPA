@@ -1,0 +1,6 @@
+king 	  :         done
+rook 	  : hattti  done
+bishop 	: uunt    done
+queen	  :         done
+knight 	:         done
+pawn 	  : pyada   done
