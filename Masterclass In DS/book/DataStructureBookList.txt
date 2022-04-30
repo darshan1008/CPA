@@ -1,0 +1,60 @@
+Unserstanding the linux kernel 
+	by Cessati & Bovet 
+	2.5.3 Address mapping sangitlay
+
+The IBC PC 
+	by Govindarajalu 
+	Hardware cha bieble
+
+Fundamentals of Digital design with verilog
+	-stephen brown 3rd edition
+	OR
+Fundamentals of Digital design with VHDL
+	- 
+
+
+Data Communication : A top to down approach 
+
+Essentials of Computer Architecture: 
+Douglas Come
+
+
+CODE The Hidden Language Of Computers 
+	- Charles Petzold
+	[DADA PUSTAK]
+
+
+
+------------ SECRET OF ALGORITHM --------------
+
+[1] Algorithmic Problem Solving Roland Backhouse
+[2] The Science of Programming by david Gries (pioneers of procedural programming)
+[3] A logical approach to discrete mathematics by David Gries
+[4] How to think about the algorithm [awgahd a vachayla]
+
+
+Google Mock Interview Codechef 
+ 
+https://www.youtube.com/watch?v=tOD6g7rF7NA
+
+
+[12.09.2020]
+Inside C++ Object Model 
+Object Oriented C by Alex Tobius Schneider 
+
+Inside COM by Del Rogerson
+
+C++ template : The Complete Guide 
+The C++ STL Jossuits
+
+
+
+For Designing:
+For C:
+[1] Priniciples of Programming Language Ravi Sethi
+[2] A Discipline of programming E.W Dijisktra
+For C+:
+[3] Object Oriented Analysis
+
+William Stalling Network and Information Security
+	- for cryptography
