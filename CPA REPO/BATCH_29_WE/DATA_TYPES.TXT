@@ -1,0 +1,14 @@
+Data types
+
+bool
+integer
+float
+
+str
+
+list
+tuple
+
+dictionary
+
+set 

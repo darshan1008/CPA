@@ -1,0 +1,36 @@
+LHS = RHS
+
+RHS = expression
+LHS = variable name
+
+[1] Evaluate RHS expression. It will yield an object  of some type.
+    Object may be previously present in pool or it may be allocated
+    freshly.
+
+[2] Check if LHS is present or not.
+    [A] NO ----> STOP
+    [B] YES
+        [a] Check the symbol table for LHS variable name
+        [b] Is it present
+            (i) NO:
+                -Create a new symbol table entry for current
+                variable name and bind the address yield by RHS object
+                with it.
+                -Increment the reference count of object yield by
+                RHS by 1
+            (ii) YES:
+                - Mark existing object in symbol table as 'old' and
+                object yield by RHS as 'current'
+                - Replace the id of 'old' object by 'current' object
+                - Decrement reference count of 'old' object by 1
+                - Increment reference count of 'current' object by 1
+
+Evaluating RHS expression:
+    [A] If  literal expression is encountered then nothing to be done
+    [B] If variable name is name encountered
+            Look up into symbol table for variable name
+            Not present:
+                raise NameError exception
+            Present:
+                Go to object whose address is present in symbol table
+                Get the value. 

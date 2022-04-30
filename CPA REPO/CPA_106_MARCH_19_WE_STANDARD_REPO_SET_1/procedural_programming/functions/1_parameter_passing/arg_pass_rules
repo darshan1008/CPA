@@ -1,0 +1,18 @@
+RULE 1: In a function call, arguments must appear in this order: any positional arguments
+( value ), followed by a combination of any keyword arguments ( name=value ) and
+the *sequence form, followed by the **dict form.
+
+RULE 2: In a function header, arguments must appear in this order: any normal arguments
+( name ), followed by any default arguments ( name=value ), followed by the *name form if 
+present, followed by any name or name=value keyword-only arguments (in 3.0), followed by the **name form.
+
+Summary of RULE 1 AND RULE 2 
+
+[1] Assign nonkeyword arguments by position.
+[2] Assign keyword arguments by matching names.
+[3] Assign extra nonkeyword arguments to *name tuple.
+[4] Assign extra keyword arguments to **name dictionary.
+[5] Assign default values to unassigned arguments in header.
+
+
+

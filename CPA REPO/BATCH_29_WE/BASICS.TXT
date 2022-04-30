@@ -1,0 +1,14 @@
+PROGRAMMING = COMPUTATION + (I/O OR SYSTEM SERVICE OR GENERAL PURPOSE LIBRARY SERVICE)
+
+IO  print, input, printf, scanf, file io, send receive, read, write
+System service : create a new process, create a new thread, create an IPC object, Create window
+Library services : XML parsing, JSON, string
+
+
+Computation = Create Data       +       Manipulate Data
+                [1] Data Type           [1] Function
+                [2] Define data type    [2] Define a function
+                [3] (a) Statement       [3] (a) statement
+                    (b) built-in            (b) built-in (operators)
+                    class                   def 
+                    
