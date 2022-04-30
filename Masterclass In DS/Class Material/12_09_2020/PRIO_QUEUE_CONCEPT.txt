@@ -1,0 +1,48 @@
+FIFO 
+
+Priority : CHRONOLOGY
+
+Which node got inserted earlier? 
+
+Priority -> server side can define what is the criterion for the priority.....
+
+struct studet{
+	int roll; 
+	float marks; 
+	float attnd; 
+}; 
+
+<-[D]<->[S1]<->[S2]<->[S3]<->....<->[Sn]->	
+
+dequeue(p_prio_queue, p_student); 
+
+ret_t prio_dequeue(prio_queue_t* p_prio_queue, student_t** pp_student, int prio_field){
+	switch(prio_field){
+		case PRIO_MIN_MARKS: 
+
+			break; 
+
+		case PRIO_MAX_MARKS: 
+
+			break; 
+
+		case PRIO_MIN_ATTND:
+
+			break; 
+
+		case PRIO_MAX_ATTND: 
+
+			break; 
+
+		case PRIO_MIN_ROLL: 
+
+			break; 
+
+		case PRIO_MAX_ROLL: 
+
+			break; 
+	}
+}
+
+
+

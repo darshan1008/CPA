@@ -1,0 +1,46 @@
+a[0] to a[j-1] is sorted 
+
+Pre: Unsorted 
+
+  
+    for(j = 1; j < n; ++j){
+
+    } 
+    after incrementing j
+    condition a[0] to a[j-1] sorted
+
+Post: sorted
+
+
+Before start of every iteration 
+a[0] to a[j-1] MUST BE SORTED 
+
+j = 1 a[0] to a[0]
+
+j = n a[0] to a[n-1] is sorted = post condition 
+
+
+Invariant condition maintained by a loop. 
+
+[1] Before the start of first iteration, 
+the condition should be true. 
+
+[2] Before start of ANY arbitrary iteration 
+(not first, not last), the condition should be true 
+
+[3] At the end of looping process, the condition should be true
+
+------------------------------------------------------------------
+Invariant: a[0] to a[j-1] is sorted 
+
+First: j = 1 
+
+a[0] to a[0] is sorted. 
+
+At the start of every iteration the condition holds true. 
+
+At the end of the looping process, j = n, a[0] to a[n-1]
+i.e. entire array is sorted. 
+
+
+

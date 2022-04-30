@@ -1,0 +1,50 @@
+[   X   ][p]        [q]             [r][      X      ]
+
+a1 <- a[p...q]
+a2 <- a[q+1...r]
+
+total = N 
+
+head of a1 --> i 
+head of a2 --> j 
+head of a[p..r] --> k  
+
+for(k = 0; k < n1+n2; k++){
+    compare the heads of a1 & a2, find out the least 
+    and copy it back to a[p+k]    
+}
+
+
+a1[0] is least in a1 ... by given 
+a2[0] is least in a2 ... by given 
+
+a[p+0] <- min(a1[0], a2[0])
+
+a1 : 0->1
+a2 : 0->1 
+
+a[p+1] <- min(a1[1], a2[0])
+
+a[p+2] <- min(a[2], a2[0])
+
+a[p+3] <- min(a[2], a2[1])
+
+Invariant: a[p...p+k] is sorted. 
+
+Before first iteration. k = 0 
+a[p...p+0] --> a[p] is sorted 
+
+k = n1 + n2 = q - p + 1 + r - q = r - p + 1
+
+a[p to p+r-p]
+a[p to r] is sorted 
+
+n1+n2-1 = (q - p + 1) + (r - q) - 1  
+        = q - p + 1 + r - q - 1 
+        = r - p 
+
+a[p....p+k]
+
+a[p....p+r-p]
+
+a[p...r]

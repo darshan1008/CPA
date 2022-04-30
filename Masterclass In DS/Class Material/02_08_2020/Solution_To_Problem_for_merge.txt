@@ -1,0 +1,168 @@
+
+sub_arr_1 <- a[p...q]
+
+sub_arr_2 <- a[q+1...r]
+
+We need to compute the length of a[p...q]
+We need to compute the length of a[q+1...r]
+
+#-----------------------------------------------------
+Find out the number of integers between two given 
+integers. 
+
+number between a to b means 
+
+[1] should we include both a & b? 
+[2] should we include a and exclude b?
+[3] should we exclude a and inlcude b? 
+[4] should we exclude both a & b. 
+
+Interval from a to b. 
+[1] Closed interval [2] Open interval [3] Semi-close interval 
+
+Closed interval 
+[a, b] meaning all integers n such that a <= n <= b (include both a&b)
+
+Open Interval 
+(a, b) meaning all integers n such that a < n < b (exclude both a&b)
+
+Semi-close / Semi open 
+[a,b) meaning all integers n such that a <= n < b 
+(a, b] meaning all integers n such that a < n <= b 
+
+[a, b], [a, b), (a, b], (a, b)
+
+
+| (a, b] | = b - a 
+
+| [a, b) | = b - a 
+
+| [a, b] | = b - a + 1
+
+| (a, b) | = b - a - 1
+
+#--------------------------------------------------------------------------------
+
+a[p...q]        all n such that p<=n<q
+                | [p,q]  |= q - p + 1 
+
+a[q+1...r]      [q+1, r] = r - (q+1) + 1 = r - q - 1 + 1 = r - q
+                (q, r] = r - q
+
+
+Length of first sub array = q - p + 1 
+Length of second sub array = r - q 
+
+    0 <= p <= q 
+
+    p = q 
+
+    q - p + 1 =1 
+    r > q 
+    r - q > 0 >= 1
+
+    0 <= p <= q < r < N 
+
+#---------------------------------------------------
+void merge(int* a, int p, int q, int r){
+    int* a1 = NULL;     /* pointer to subarray 1 */ 
+    int n1;             /* size of subarray 1 */ 
+
+    int* a2 = NULL;     /* pointer to subarray 2 */ 
+    int n2;             /* size of subarray 2 */ 
+
+    int i; 
+
+    n1 = q - p + 1; 
+    n2 = r - q; 
+
+    a1 = (int*)malloc(n1*sizeof(int)); 
+    assert(a1 != NULL); 
+    a2 = (int*)malloc(n2*sizeof(int)); 
+    assert(a2 != NULL); 
+
+    /* memcpy(a1, a+p, n1*sizeof(int)); */
+    for(i = 0; i < n1; ++i)
+        a1[i] = a[p+i]
+
+    /* memcpy(a2, a+q+1, n2*sizeof(int)); */ 
+    for(i = 0; i < n2; i++)
+        a2[i] = a[q+1+i]; 
+
+    int i, j, k; 
+
+    i = 0; 
+    j = 0; 
+    k = 0; 
+
+    while(TRUE)
+    {
+        if(a1[i] <= a2[j])
+        {
+            a[p+k] = a1[i]; 
+            i++; 
+            k++; 
+            if(i == n1)
+            {
+                while(j < n2)
+                {
+                    a[p+k] = a2[j]; 
+                    j++; 
+                    k++; 
+                }
+                break; 
+            }
+        }
+        else
+        {
+            a[p+k] = a2[j]; 
+            k++; 
+            j++; 
+            if(j == n2)
+            {
+                while(i < n1)
+                {
+                    a[p+k] = a1[i]; 
+                    i++; 
+                    k++; 
+                }
+                break; 
+            }
+        }
+    }
+
+    free(a1); 
+    a1 = NULL; 
+
+    free(a2); 
+    a2 = NULL; 
+}
+#--------------------------------------------------
+
+E.W. Dijikstra (2008)
+Turing Award Winner 
+
+Style & Discipline 
+
+A discipline of programming 
+    - E.W. Dijikstra.
+
+The science of programming 
+    - David Gries. 
+
+Roland Backhouse --> Colleauge (Eindhoven)
+Algorithm 
+
+Algorithmic Problem Solving. 
+
+goto 
+
+Donald Knuth 
+Assembly 
+
+Structured Programming Using goto statement 
+
+
+
+
+

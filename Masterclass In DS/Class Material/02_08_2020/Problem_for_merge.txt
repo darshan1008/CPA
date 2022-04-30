@@ -1,0 +1,19 @@
+PRECONDITION: 
+
+    Consider array of N elements, (VIR: 0 <= i < N-1)
+
+    Consider three indices, p, q, r such that 
+
+            0 <= p <= q < r < N
+
+                and 
+
+            a[p...q]    is sorted
+
+                and 
+
+            a[q+1...r]  is sorted 
+
+POSTCONDITION: 
+    a[p...r] is sorted.
+

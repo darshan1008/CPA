@@ -1,0 +1,158 @@
+SORTING : Array. 
+
+Let N be the size of array A. 
+If i is a valid index in array A then 
+
+0 <= i < N (TRUE)
+
+Let i and j be any two indices in array A. 
+
+0 <= i, j < N 
+
+Consider array A of size N. 
+Let following be its elements 
+
+<a0, a1, a2, ...., aN-1> 
+
+SORTING(A)
+
+<a'0, a'1, ...., a'N-1> 
+
+Array has to be of some type. 
+
+int A[5]; 
+
+float B[5]; 
+
+T A[N]; 
+
+
+A is array of size N of elements of type T. 
+
+Array is said to be well ordered if 
+for any two elements of A, say x & y, following is true, 
+
+x < y OR x > y OR x = y. 
+
+1 4 2 5 1 6
+
+4 & 6 
+
+4 < 6 OR 4 > 6 or 4 = 6
+
+1 5
+
+1 < 5, 1 > 5 or  1=5
+
+
+Permutation of array. (Rearrangement)
+
+[1	4	6	2	3	9	12]	-> A1
+
+[12	 2	 9	 1	 4	 6	 3] -> A2 
+
+A2 is nothing but a rearrangement of A1. 
+
+With respect to A1, we've not added any element in A2 which is not in A1
+, we've not removed in A2 which is in A1, and total number of elements in 
+A1 and A2 remaing same. 
+
+This implies, 
+
+we've simply rearranged elements in A1 to get A2.
+
+This rearrangement is called permutation. 
+
+y	o 	g 	i  
+
+
+i g o y 	(Permutation of my name)
+
+g o y i 	(Permutation of my name)
+
+u i o g 	(Permutation of my name)
+
+Let A = <a0, a1, a2,.... an-1> be an array 
+array A' = <a'0, a'1, ..., a'n-1> is a permutation of array A if 
+......
+
+for all i (0 <= i < n), there exists j (0 <= j < n) (such that) (A[i] = A'[j])
+
+Let A be an ordered array.
+Express the fact that A is sorted. 
+
+in non-decreasing order 
+
+for all i, j (0 <= i, j < n)(i < j => a[i] <= a[j])
+
+for non-increasing order 
+
+for all i, j(0 <= i, j < n)(i < j => a[i] >= a[j])
+
+
+1, 4, 6, 6, 8, 9
+
+in non-decreasing order if some valid index i is less than some valid index j 
+then we can argue that element at i must be less or equal element at j 
+
+for all i, j (0<= i, j< n)(i < j => a[i] <= a[j])
+
+
+Let A be any array of size N. 
+
+Before we process array with sorting algorithm, no specific 
+ordering exists between array elements. 
+
+After array is processed by SORTING ALGORITHM 
+
+we get transformed version of array A' such that 
+
+for all j (0 <= j < n) there exists i (0 <= i < n)(such that)(A'[i] = A[j])
+and 
+for all i, j (0 <= i < n)(i < j => a[i] <= a[j])
+
+Let A be an array 
+and let A' be its sorted version 
+
+A' is a permutation of A
+and for all i, j (0 <= i, j < n)(a[i] <= a[j])
+
+PRECONDITION: Relationship/Condition that input data satisifes before being 
+subjected to algorithm. 
+
+ALGORITHM 
+
+POSTCONDITION: Relationship/Condition that input data satisifes after being 
+subjected to algorithm. 
+
+
+Precondition: A = <a0, a2, ...., aN-1> is an unsorted array A of N integers. 
+
+SORT(A)
+
+Postcondition: Array A is transformed into such array A' that 
+
+for all j (0 <= j < N), there exists i (0 <= i < N)(such that)(A'[j] = A[i])
+AND 
+for all i, j(0 <= i, j < N)(i < j => A'[i] <= A'[j])
+
+
+Precondition: 
+A = <a0, a1, ..., aN-1> is array of N integers. 
+
+Postcondition: 
+Array A is transformed into Array A' such that 
+for all i (0 <= i < N)(A'[i] == A[N-1-i])
+
+
+a0 a1 a2 a3 a4 : N = 5 
+
+A' a4 a3 a2 a1 a0 
+	0 1  2  3  4 
+
+
+5-1-0 = 4
+5-1-1 = 3 
+5-1-2 = 2 
+5-1-3 = 1 
+5-1-5 = 0 

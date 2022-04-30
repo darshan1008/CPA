@@ -1,0 +1,25 @@
+struct node{
+	int data;
+	struct node* prev; 
+	struct node* next; 
+}; 
+
+struct bst_node{
+	int data; 
+	struct bst_node* left, *right, *parent; 
+}; 
+
+If there are N elements in BST then there are N nodes of 
+type struct bst_node. 
+
+While traversing through the BST, if I want to save current 
+node's address onto the stack then I will need a stack of 
+bst_node_t* 
+
+struct bstptr_node{
+	struct bst_node* p; 
+	int color; 
+
+	struct bstptr_node* prev, *next; 
+}; // -> Doubly circular linked list -> stack 
+

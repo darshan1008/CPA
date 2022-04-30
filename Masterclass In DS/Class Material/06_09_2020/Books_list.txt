@@ -1,0 +1,21 @@
+[1] Programming with C by Gottfriend / The C Programming Language  / 
+	Understanding and Using C Pointer by Richard Reese 
+[2] For CPP : C++ primer, 4th edition 
+[3] Core Java Vol 1, Horstman & Horstman 
+
+
+[1] Robert Sedgwick 
+	Algorithms in C Vol 1 to Vol 4 --> Book1 
+	Algorithms in C Vol 5 
+
+[2] Data Structure & Algorithms in C++  [Java / Python]
+	Tamassia,Goodrich & Mount 
+
+[3] Data Structure & Algorithms in C++  [Java ] 
+	Tamassia,Goodrich & Mount 
+
+	OR 
+
+	Algorithms in Java 
+
+

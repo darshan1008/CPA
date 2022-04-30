@@ -1,0 +1,20 @@
+Let T be a binary tree whose every vertex whose every vertex is mapped 
+to object of some ordered data type. [ordered type is one whose any 
+two objects can be compared with comparison operators] 
+
+The T is binary search tree if it satisfies following criteria. 
+
+for all nodes beglonging to T: 
+[1] the data in the node is greater than or equal to data in all nodes 
+in left subtree rooted at the node 
+
+[2] the data in the node is the node is less than the data in all nodes 
+in right subtree rooted at that node. 
+
+#-----------------------------------------------------------------------------
+
+For leaf nodes, or nodes lacking either left or right subtree, this statement 
+is vacuously true. 
+
+#------------------------------------------------------------------------------
+
