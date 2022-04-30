@@ -1,0 +1,23 @@
+my_gcc.py 
+
+python3 my_gcc.py hello.c [exe_name] 
+
+Option1: 
+
+python3 my_gcc.py hello.c 
+
+Option2: 
+
+python3 my_gcc.py hello.c hello 
+
+Output: 
+Option1 : 
+a.out file which is an exec built out of gcc 
+
+Option2: 
+[exe_name] file which is an executable built out of gcc 
+
+# GCC COMMAND 
+
+gcc hello.c ---> a.out 
+gcc hello.c -o hello ---> hello 

@@ -1,0 +1,17 @@
+hello.c ---> hello.S ---> hello.o ---> hello.exe 
+	C 	     A 	           L 
+
+my_gcc.py hello.c  	---> 	hello 		[C + A + L] 
+my_gcc.py -S hello.c 	---> 	hello.S 	[C]  
+my_gcc.py -c hello.c 	---> 	hello.o 	[C + A] 
+
+
+C 
+
+# gcc -S -o hello.S hello.c 
+
+A 
+# as -o hello.o hello.S 
+
+L 
+# ld -o hello.exe -lc -dynamic-linker /lib64/ld-linux-x86-x64.so.2 hello.o -e main 

@@ -1,0 +1,43 @@
+Structure of Python Program
+
+xyz.py
+
+MODULE
+    CLASS [OPTIONAL]
+        FUNCTIONS [OPTIONAL]
+            STATEMENT
+#--------------------------------
+MODULE
+    FUNCTION
+        STATEMENT
+#--------------------------------
+MODULE
+    STATEMENT
+#--------------------------------
+MODULE
+    CLASS
+        STATEMENT
+#--------------------------------
+
+General Syntax
+import <PACKAGE-NAME>
+
+def <FUNCTION NAME>(ARGUMENT LIST):
+    BLOCK OF STATEMENTS
+
+<FUNCTION NAME>(ARGUMENT LIST)
+
+#---------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+        
